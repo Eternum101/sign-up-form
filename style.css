@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: .1rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    color: white;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+}
+
+.container-image {
+    display: flex;
+    background-color: #1966FF;
+    width: 100%;
+}
+
+.img {
+    background-image: url(sign-up-animate.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 100vh;
+    width: 40vw;
+}
+
+.container-form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 40vw;
+    flex-grow: 1;
+    background-color: #DBDBDB;
+}
+
+.container-header {
+    display: flex;
+    margin-bottom: 80px;
+    padding: 30px;
+    font-size: .8rem;
+}
+
+.form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 30px;
+    background-color: #EDEDED;
+}
+
+.form-title {
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    width: 40%;
+    gap: 5px;
+}
+
+input {
+    width: 80%;
+    height: 1.7rem;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+label {
+    font-size: .8rem;
+}
+
+.container-button {
+    margin-top: 50px;
+}
