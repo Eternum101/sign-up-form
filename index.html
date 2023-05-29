@@ -5,53 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/87161b5108.js" crossorigin="anonymous"></script>
     <title>Sign Up Form</title>
 </head>
 <body>
 <div class="container-image">
     <div class="img">
-        <h1 class="logo">Sign Up!</h1>
+        <h1 class="logo">BrightMind™</h1>
     </div>
 <div class="container-form">
     <div class="container-header">
-        <h1>This is not a real online service! You know you need something like this 
-            in your life to help you realize your deepest dreams. Sign up 
-            <em>now</em> to get started.
-            <br><br> You <em>know</em> you want to.</h1>
+        <h1>Sign up to create an account and access exclusive features and content. 
+            It only takes a few minutes to complete the form. You 
+            <em>know </em> you want to.
+            <br><br>Join <em>us </em> today!</h1>
     </div>
     <form action="">
         <div class="form left">
             <h1 class="form-title">Let's do this!</h1>
             <div class="input">
                 <label for="first-name">First Name:</label>
-                <input type="text" name="first-name" id="first-name">
+                <input type="text" name="first-name" id="first-name" required placeholder=" ">
             </div>
             <div class="input">
                 <label for="last-name">Last Name:</label>
-                <input type="text" name="last-name" id="last-name">
+                <input type="text" name="last-name" id="last-name" required placeholder=" ">
             </div>
             <div class="input">
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required placeholder=" ">
             </div>
             <div class="input">
                 <label for="phone-number">Phone Number:</label>
-                <input type="tel" name="phone-number" id="phone-number">
+                <input type="tel" name="phone-number" id="phone-number" required 
+                maxlength="10" 
+                pattern="^(\+?\(61\)|\(\+?61\)|\+?61|\(0[1-9]\)|0[1-9])?( ?-?[0-9]){7,9}$"
+                placeholder="Ex. 0455789371">
             </div>
             <div class="input">
                 <label for="password">Password:</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" minlength="8" placeholder=" " required>
             </div>
             <div class="input">
                 <label for="confirm-password">Confirm Password:</label>
-                <input type="password" name="confirm-password" id="confirm-password">
+                <input type="password" name="confirm-password" id="confirm-password" placeholder=" " required>
             </div>
+            <div class="error"></div>
         </div>
         <div class="container-button">
-            <button class="create-account">Create Account</button>
+            <button class="create-account-button">Create Account</button>
+            <h2>Already have an acccount? <a href="#">Login</a></h2>
         </div>
     </form>
 </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>

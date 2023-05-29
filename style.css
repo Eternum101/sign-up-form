@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 10px;
+    padding: 15px;
     color: white;
 }
 
@@ -28,9 +28,19 @@ body {
     justify-content: center;
 }
 
+em {
+    background-image: linear-gradient(90deg, #2579e7 0%, #B721FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
 .container-image {
     display: flex;
-    background-color: #1966FF;
+    background-image: linear-gradient(160deg, #2579e7 0%, #B721FF 100%);
     width: 100%;
 }
 
@@ -49,12 +59,13 @@ body {
     justify-content: center;
     width: 40vw;
     flex-grow: 1;
-    background-color: #DBDBDB;
+    background-color: #f0f0f0;
+    background-image: url(blob-scene-haikei.svg);
 }
 
 .container-header {
     display: flex;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     padding: 30px;
     font-size: .8rem;
 }
@@ -64,10 +75,13 @@ body {
     flex-flow: row wrap;
     gap: 20px;
     padding: 30px;
+    padding-bottom: 50px;
     background-color: #EDEDED;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .form-title {
+    font-size: 1.5rem;
     width: 100%;
 }
 
@@ -80,16 +94,66 @@ body {
 }
 
 input {
+    border: 0;
+    z-index: 1;
     width: 80%;
     height: 1.7rem;
-    border-radius: 4px;
-    border: 1px solid;
+    border-bottom: 2px solid #A9A9A9;
+    background-color: transparent;
+    font-size: 0.9rem;
 }
+
+input:focus {
+    outline: 0;
+    border-bottom-color: #6658d3;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+    border-color: #6658d3;
+  }
 
 label {
     font-size: .8rem;
 }
 
+.error {
+    color: red;
+    font-size: 0.9rem;
+}
+
 .container-button {
-    margin-top: 50px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.container-button h2 {
+    font-size: .9rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.container-button a {
+    text-decoration: none;
+    color: #2579e7;
+}
+
+.create-account-button {
+    padding: 12px;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 180px;
+    cursor: pointer;
+    background-image: linear-gradient(160deg, #2579e7 0%, #B721FF 100%);
+    transition: all .2s ease-in-out; 
+}
+
+.create-account-button:hover {
+    transform: scale(1.1);
 }
