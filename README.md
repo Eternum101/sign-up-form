@@ -14,16 +14,10 @@ A Modern Illustration of a Sign Up Form using HTML, CSS &amp; JavaScript.
 ## Screenshots
 
 ### Initial Screen
-![](screenshots/initial-screen-etch-a-sketch.png)
+![](screenshots/initial-screen-sign-up-form.png)
 
-### Colour Mode
-![](screenshots/colour-mode-etch-a-sketch.png)
-
-### Rainbow Mode
-![](screenshots/rainbow-mode-etch-a-sketch.png)
-
-### Grid Adjustability
-![](screenshots/grid-adjustability-etch-a-sketch.png)
+### Form Validation
+![](screenshots/form-validation-sign-up-form.png)
 
 [Back to Top](#sign-up-form)
 
