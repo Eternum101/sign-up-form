@@ -1,6 +1,6 @@
 # Sign Up Form
 
-View Demo
+🔗 [View Demo](https://eternum101.github.io/sign-up-form/)
 
 ## Table of Contents
 - [About The Project](#about-the-project)
