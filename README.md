@@ -9,7 +9,7 @@
 - [Features](#features)
 
 ## About The Project
-A Modern Illustration of a Sign Up Form using HTML, CSS &amp; JavaScript.
+A Modern Illustration of a Sign Up Form.
 
 ## Screenshots
 
